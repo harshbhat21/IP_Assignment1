@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta (data about the data) tags helps to improve the SEO website  -->
+    <meta name="description" content="This is my personal website!!">
+    <meta name="keywords" content="portfolio, personal website, dev">
+    <meta name="author" content="Harsh Bhat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh's Personal Site</title>
+    <link rel="stylesheet" href="ipstyle.css">
+    
+</head>
+<body>
+    <center>
+        
+        <img src="me.jpg" alt="harsh profile picture" width="200px">
+        <h1>Harsh Bhat</h1>
+        <p><em>I'm a Computer Engineering Student at <strong> 
+        <a href="https://vesit.ves.ac.in">VESIT</a></strong></em></p>
+               
+    </center>
+    <hr>
+    <h3>About me</h3>
+    <p>I am Harsh Ashwin Bhat and I am 20 years old. I am well versed with basic knowledge of technical skills of C, C++, Java, Python 
+        programming languages. I am fluent in Spanish and have been teaching the same as a foreign language faculty since two years. My 
+        other hobbies include reading, writing articles and watching movies.
+    </p>
+    <hr>
+    <h3>Education</h3>
+    <ul>
+        <li>BE in Computer Engineering- <strong>VESIT</strong></li>
+        <li>HSC, Maharashtra Board- <strong>Wamanrao Muranjan Jr. College</strong></li>
+        <li>SSC, Maharashtra Board- <strong>St. Pius X High School</strong></li>
+        <li>C, C++, Java - <strong>CMIT</strong></li>
+        <li>HTML, CSS And Javascript for Web Developers - <strong>John Hopkins University</strong></li>
+    </ul>
+    <hr>
+    <h3>Awards</h3>
+    <ul>
+        <li>Certificate for serving as Jr. Editor at CSI VESIT</li>
+        <li>2nd Prize at T-Ward English Elocution Competition</li>
+    </ul>
+    <hr>
+    <h3>My Hobbies</h3>
+    <ol>
+        <li>Learning Foreign Languages - <a href="https://www.urbanpro.com/mumbai/harsh-bhat/25176015">Check out my UrbanPro Profile!</a></li>
+        <li>Reading</li>
+        <li>Hanging out with my friends</li>
+    </ol>
+    <hr>
+    <h3>Work Experience</h3>
+    <table cellspacing="10">
+        <thead>
+            <tr>
+                <th>Dates</th>
+                <th>Work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2020-present</td>
+                <td>Spanish Language Faculty</td>
+            </tr>
+            <tr>
+                <td>2021-present</td>
+                <td>Jr. Editor at CSI-VESIT</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>Skills</h3>
+    <table cellspacing="10">
+        <tr>
+            <td>C++</td>
+            <td>⭐⭐</td>
+        </tr>
+        <tr>
+            <td>Python 3</td>
+            <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>⭐⭐⭐</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Get in touch with me! </h3>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/harsh-bhat-642503203"> Linkedin Profile</a></li>
+        <li><a href="https://github.com/harshbhat21">Github Profile</a></li>
+        <li><strong>My email: </strong><a href="mailto: harshbhat8@gmail.com">harshbhat8@gmail.com</a></li>
+    </ul>
+    <hr>
+    <h3>Send me a message: </h3>
+    <form action="mailto:harshbhat8@gmail.com" method="POST" enctype="text/plain">
+        <label for="">Your Name: </label>
+        <input type="text" name="yourName" id=""><br><br>
+        <label for="">Mobile No: </label>
+        <input class="form-control" type="text" minlength="10" maxlength="10"
+        name="phone" required><br><br>
+        <label for="">Your Email: </label>
+        <input type="email" name="yourEmail" id=""><br><br>
+        <label for="">Your Message:</label><br>
+        <textarea name="yourMessage" id="" cols="34" rows="10"></textarea><br><br>
+        <input type="submit" value="Submit">       
+    </form>
+</body>
+<hr>
+<footer>
+    <center>
+        <h4>Some Rights Reserved!</h4>
+    </center>
+</footer>
+<script>
+    (function () {
+        'use strict'
+        const forms = document.querySelectorAll('.requires-validation')
+        Array.from(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+
+</html>
